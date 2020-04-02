@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>轮播图</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="box" id="box">
+			
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./Carousel.js"></script>
+	<script>
+		var myCarousel = new Carousel();
+		myCarousel.show({
+			boxName:"#box",
+			carNum:5,
+			imgUrl:["img/b1.png","img/b2.png","img/b3.png","img/b4.png","img/b5.png"],
+			speed:2000
+		});
+		
+	</script>
+</html>
